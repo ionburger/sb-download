@@ -9,6 +9,7 @@ while True:
         if length > 3600:
             final_clip = moviepy.editor.concatenate_videoclips(clips)
             final_clip.write_videofile("final.mp4")
+            break
         clip = mpy.VideoFileClip(f"clips/{file}")
         length += clip.duration
         clips.append(clip)
