@@ -14,7 +14,7 @@ while True:
         time.sleep(10)
     else:
         segments = []
-        video = os.listdir("downloads")[0].split("!")[0]
+        video = os.listdir("downloads")[0]
         print(f"Found {video}...")
 
         for segment in sb.get_skip_segments(f"https://www.youtube.com/watch?v={video}"):
